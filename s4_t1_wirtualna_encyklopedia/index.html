@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <link rel="stylesheet" type="text/css" href="../global/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../global/css/animate.css" />
+</head>
+
+<body id="encyclopedia">
+
+    <div id="header">
+        <div class="title">Słownik forteczny</div>
+
+        <div class="languages">
+            <div class="button" data-lang="de">de</div>
+            <div class="button" data-lang="en">en</div>
+            <div class="button selected" data-lang="pl">pl</div>
+        </div>
+
+        <div class="font-size-setter">
+            <div class="button"><img src="../global/img/font-size-0.png" /></div>
+        </div>
+    </div>
+
+    <div id="start-page" class="page">
+        <div class="title"></div>
+        <div class="button-start wow pulse animated" data-wow-iteration="infinite" data-wow-duration="4.0s" data-goto="list-page">Dotknij by rozpocząć <img src="../global/img/icons/ico_reka_klik1.svg" /></div>
+
+        <div id="footer">
+            <div class="button button-icon button-icon-right" data-goto="list-page">Dalej<img src="../global/img/icons/ico_arrow_r_btn.svg" /></div>
+        </div>
+    </div>
+
+    <div id="list-page" class="page">
+        <div class="scroll-container nice-scroll">
+            <div class="list">
+            </div>
+        </div>
+        <div id="footer">
+            <div class="button button-icon button-icon-left" data-goto="start-page"><img src="../global/img/icons/ico_arrow_l_btn.svg" />Powrót</div>
+        </div>
+    </div>
+
+    <div id="definition-page" class="page">
+        <div class="left-side scroll-container nice-scroll">
+            <div class="text-container">
+                <h1></h1>
+                <div class="text"></div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="image">
+                <img src="" />
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="button button-icon button-icon-left" data-goto="list-page"><img src="../global/img/icons/ico_arrow_l_btn.svg" />Powrót</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../global/js/wow.min.js"></script>
+    <script type="text/javascript" src="../global/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../global/js/parallax.js"></script>
+    <script type="text/javascript" src="../global/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
+    <script type="text/javascript" src="../global/js/global.js "></script>
+</body>
+
+</html>
